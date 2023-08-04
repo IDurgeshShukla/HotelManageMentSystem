@@ -11,11 +11,21 @@ public class Hotel {
 
     private int pricePerNight;
 
-    public Hotel(String hotelName, int availableRooms, List<Facility> facilities, int pricePerNight) {
+    private String location;
+    public Hotel(String hotelName, int availableRooms, List<Facility> facilities, int pricePerNight, String location) {
         this.hotelName = hotelName;
         this.availableRooms = availableRooms;
         this.facilities = facilities;
         this.pricePerNight = pricePerNight;
+        this.location = location;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     public String getHotelName() {
